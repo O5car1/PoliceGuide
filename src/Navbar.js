@@ -15,7 +15,8 @@ const pages = [
     <Link to='/toolkit'><Button>Toolkit</Button></Link>,
     <Link to='/d13'><Button>D13 Medical</Button></Link>,
     <Link to='/legislation'><Button>Legislation</Button></Link>,
-    <Link to='/documents'><Button>Documents</Button></Link>
+    <Link to='/documents'><Button>Documents</Button></Link>,
+    <Link to='/torcodes'><Button>TOR Codes</Button></Link>
 ];
 
 function ResponsiveAppBar() {
