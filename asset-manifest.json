@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/PoliceGuide/static/css/main.1770f81c.css",
-    "main.js": "/PoliceGuide/static/js/main.e104626c.js",
+    "main.js": "/PoliceGuide/static/js/main.bf7716db.js",
     "static/media/zekton.ttf": "/PoliceGuide/static/media/zekton.bf5e5d746951942812a0.ttf",
     "index.html": "/PoliceGuide/index.html",
     "main.1770f81c.css.map": "/PoliceGuide/static/css/main.1770f81c.css.map",
-    "main.e104626c.js.map": "/PoliceGuide/static/js/main.e104626c.js.map"
+    "main.bf7716db.js.map": "/PoliceGuide/static/js/main.bf7716db.js.map"
   },
   "entrypoints": [
     "static/css/main.1770f81c.css",
-    "static/js/main.e104626c.js"
+    "static/js/main.bf7716db.js"
   ]
 }
