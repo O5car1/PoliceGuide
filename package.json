@@ -1,6 +1,7 @@
 {
   "name": "material-ui-cra",
   "version": "5.0.0",
+  "homepage": "https://oscar-dixon.github.io/PoliceGuide/",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
