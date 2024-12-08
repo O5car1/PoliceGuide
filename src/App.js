@@ -33,7 +33,7 @@ import Documents from './pages/Documents.js'
             <Box>
                 <Box>
                     <Routes>
-                        <Route exact path="/" element={<Home />} />
+                        <Route exact path="/PoliceGuide" element={<Home />} />
                         <Route path="/d13" element={<D13Medical />} />
                         <Route path="/toolkit" element={<Toolkit />} />
                         <Route path="/legislation" element={<Legislation />} />
