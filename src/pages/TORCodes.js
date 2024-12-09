@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 
 const TORCodes = () => {
     return (
-        <Box sx={{ width: '100%', height: '100vh' }}>
+        <Box sx={{ width: '100%', height: '92vh' }}>
             <iframe width='100%' height='100%' fill src="https://offencecode.uk/categories/traffic-offence-codes/"/>
         </Box>
     );

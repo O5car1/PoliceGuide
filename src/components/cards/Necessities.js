@@ -6,7 +6,7 @@ function Necessities() {
             <CardContent>
                 <Grid2>
                 <Typography color='secondary' variant='h5' sx={{pb: 2}}>Necessities</Typography>
-                <Grid2 size={3} container spacing={1} sx={{ width: 300 }}>
+                <Grid2 container spacing={1}>
                     <Tooltip arrow followCursor title='Allow a prompt and effective investigation of the offence or of the conduct of the person in question'>
                         <Chip label='Investigation' variant='outlined' size='small' color='primary'></Chip>
                     </Tooltip>

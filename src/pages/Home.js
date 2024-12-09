@@ -9,21 +9,21 @@ import Notes from '../components/cards/Notes';
 
 const Home = () => {
     return (
-        <Box>
-            <Typography color='primary' variant="h4" padding={'1%'}>Crib Sheet</Typography>
+        <Grid2 padding={1.5}>
+            <Typography color='primary' variant="h4" sx={{ paddingBottom: '12px' }}>Crib Sheet</Typography>
             <Grid2 container spacing={1.5}>
-                <Grid2 sx={{width: '30.1%', display: 'flex'}} container columns={1}>
+                <Grid2 sx={{width: '25.7%',  display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}} container columns={1}>
                     <ICCodes />
                     <DrugClasses />
                 </Grid2>
-                <Grid2 sx={{width: '16.8%', display: 'flex'}} container columns={1}>
+                <Grid2 sx={{width: '17%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}} container columns={1}>
                     <Necessities />
                     <IPP />
                 </Grid2>
                 <Grid2><GOWISELY /></Grid2>
                 <Grid2><Notes /></Grid2>
             </Grid2>
-        </Box>
+        </Grid2>
     );
 }
 
