@@ -35,11 +35,11 @@ import TORCodes from './pages/TORCodes.js'
                 <Box>
                     <Routes>
                         <Route exact path="/PoliceGuide" element={<Home />} />
-                        <Route path="/d13" element={<D13Medical />} />
-                        <Route path="/toolkit" element={<Toolkit />} />
-                        <Route path="/legislation" element={<Legislation />} />
-                        <Route path="/documents" element={<Documents />} />
-                        <Route path="/torcodes" element={<TORCodes />} />
+                        <Route path="PoliceGuide/d13" element={<D13Medical />} />
+                        <Route path="PoliceGuide/toolkit" element={<Toolkit />} />
+                        <Route path="PoliceGuide/legislation" element={<Legislation />} />
+                        <Route path="PoliceGuide/documents" element={<Documents />} />
+                        <Route path="PoliceGuide/torcodes" element={<TORCodes />} />
                     </Routes>
                 </Box>
             </Box>
