@@ -4,7 +4,9 @@ const D13Medical = () => {
     return (
         <Box>
             <Typography variant="h4" padding={'1%'}>D13 Medical</Typography>
-            Test
+            <Box sx={{ width: '100%', height: '83vh' }}>
+                <object width='100%' height='100%' data="..content/test.txt"/>
+            </Box>
         </Box>
     );
 }
