@@ -87,7 +87,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/PoliceGuide"
             sx={{
                 display: {
                     mr: 1,

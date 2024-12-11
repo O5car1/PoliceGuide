@@ -1,4 +1,4 @@
-import { Card, CardContent, Grid2, Typography, Table, TableHead, TableRow, TableCell, TableBody, Box } from "@mui/material";
+import { Card, CardContent, Grid2, Typography, Table, TableHead, TableRow, TableCell, TableBody } from "@mui/material";
 
 function ICCodes() {
     return (
