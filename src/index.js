@@ -8,9 +8,7 @@ root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-);
-
-<p><a href="content/D13Training.pdf"></a></p>
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
