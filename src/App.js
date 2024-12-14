@@ -4,7 +4,7 @@ import CssBaseline from '@mui/material/CssBaseline'
 import Home from './pages/Home.js';
 import ButtonAppBar from './Navbar.js';
 import Toolkit from './pages/Toolkit.js';
-// import Legislation from './pages/Legislation.js';
+import Legislation from './pages/Legislation.js';
 import Documents from './pages/Documents.js';
 import TORCodes from './pages/TORCodes.js'
 
@@ -21,6 +21,9 @@ import TORCodes from './pages/TORCodes.js'
             info: {
                 main: '#2196f3',
               },
+              error: {
+                main: '#d50000',
+              },
           },
       });
 
@@ -35,7 +38,7 @@ import TORCodes from './pages/TORCodes.js'
                     <Routes>
                         <Route exact path="/PoliceGuide" element={<Home />} />
                         <Route path="PoliceGuide/toolkit" element={<Toolkit />} />
-                        {/* <Route path="PoliceGuide/legislation" element={<Legislation />} /> */}
+                        <Route path="PoliceGuide/legislation" element={<Legislation />} />
                         <Route path="PoliceGuide/documents" element={<Documents />} />
                         <Route path="PoliceGuide/torcodes" element={<TORCodes />} />
                     </Routes>

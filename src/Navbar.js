@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 
 const pages = [
     <Link to='PoliceGuide/toolkit'><Button>Toolkit</Button></Link>,
-    // <Link to='PoliceGuide/legislation'><Button>Legislation</Button></Link>,
+    <Link to='PoliceGuide/legislation'><Button>Legislation</Button></Link>,
     <Link to='PoliceGuide/documents'><Button>Documents</Button></Link>,
     <Link to='PoliceGuide/torcodes'><Button>TOR Codes</Button></Link>
 ];
