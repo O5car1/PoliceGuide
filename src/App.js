@@ -13,10 +13,10 @@ import TORCodes from './pages/TORCodes.js'
         palette: {
             mode: 'dark',
             primary: {
-              main: '#47C2FF',
+              main: '#14B1FF',
             },
             secondary: {
-              main: '#FF4284',
+              main: '#FF055D',
             },
             info: {
                 main: '#2196f3',
