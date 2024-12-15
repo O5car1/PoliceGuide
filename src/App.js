@@ -13,7 +13,7 @@ import TORCodes from './pages/TORCodes.js'
         palette: {
             mode: 'dark',
             primary: {
-              main: '#1976d2',
+              main: '#47C2FF',
             },
             secondary: {
               main: '#f50057',
