@@ -1,4 +1,4 @@
-import {  Typography, Grid2, Box, Item } from '@mui/material';
+import { Typography, Grid2 } from '@mui/material';
 import React from "react";
 import Necessities from '../components/cards/Necessities';
 import ICCodes from '../components/cards/IC-Codes';
@@ -9,22 +9,80 @@ import Notes from '../components/cards/Notes';
 
 const Home = () => {
     return (
-        <Grid2 padding={1.5}>
-            <Typography color='primary' variant="h4" sx={{ paddingBottom: '12px' }}>Crib Sheet</Typography>
-            <Grid2 container spacing={1.5}>
-                <Grid2 sx={{width: '25.7%',  display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}} container columns={1}>
+        <Grid2
+            container
+            direction="column" // Ensure vertical stacking of title and content
+            spacing={2}
+            padding={1.5}
+        >
+            {/* Title Section */}
+            <Grid2
+                item
+                xs={12} // Full width
+            >
+                <Typography color="primary" variant="h4">
+                    Crib Sheet
+                </Typography>
+            </Grid2>
+
+            {/* Main Content Section */}
+            <Grid2 container spacing={1}>
+                {/* First Column */}
+                <Grid2
+                    item
+                    xs={12} md={3}
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: 1,
+                    }}
+                >
                     <ICCodes />
                     <DrugClasses />
                 </Grid2>
-                <Grid2 sx={{width: '17%', display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}} container columns={1}>
+
+                {/* Second Column */}
+                <Grid2
+                    item
+                    xs={12} md={3}
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: 1,
+                    }}
+                >
                     <Necessities />
                     <IPP />
                 </Grid2>
-                <Grid2><GOWISELY /></Grid2>
-                <Grid2><Notes /></Grid2>
+
+                {/* Third Column */}
+                <Grid2
+                    item
+                    xs={12} md={3}
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: 1,
+                    }}
+                >
+                    <GOWISELY />
+                </Grid2>
+
+                {/* Fourth Column */}
+                <Grid2
+                    item
+                    xs={12} md={3}
+                    sx={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: 2,
+                    }}
+                >
+                    <Notes />
+                </Grid2>
             </Grid2>
         </Grid2>
     );
-}
+};
 
 export default Home;

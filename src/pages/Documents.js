@@ -35,6 +35,10 @@ const Documents = () => {
         label: 'TSG POL1 Training',
         url: 'https://oscar-dixon.github.io/PoliceGuide/content/MO7POL1Training.pdf',
     },
+    {
+        label: 'TOR Code Qucik Reference',
+        url: 'https://www.polfed.org/media/17076/offenc-1.pdf',
+    },
   ];
 
   return (

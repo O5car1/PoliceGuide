@@ -2,15 +2,32 @@ import { Card, CardContent, Grid2, Typography, Table, TableHead, TableRow, Table
 
 function ICCodes() {
     return (
-        <Card variant='outlined'>
+        <Card
+            variant="outlined"
+            sx={{
+                maxWidth: { xs: '100%', sm: '400px', md: '500px' }, // Responsive width limits
+                width: '100%', // Takes up the full width of its parent up to maxWidth
+                padding: { xs: 1, sm: 1 }, // Adjust padding for responsiveness
+                boxShadow: 2, // Optional: Adds shadow for better appearance
+            }}
+        >
             <CardContent>
-                <Typography color='secondary' variant='h5'>IC Codes</Typography>
+                <Typography
+                    color="secondary"
+                    variant="h5"
+                >
+                    IC Codes
+                </Typography>
                 <Grid2>
-                    <Table size='small'>
+                    <Table size="small">
                         <TableHead>
                             <TableRow>
-                                    <TableCell><Typography color='primary'>IC Code</Typography></TableCell>
-                                    <TableCell><Typography color='primary'>Ethnicity</Typography></TableCell>
+                                <TableCell>
+                                    <Typography color="primary" variant="subtitle2">IC Code</Typography>
+                                </TableCell>
+                                <TableCell>
+                                    <Typography color="primary" variant="subtitle2">Ethnicity</Typography>
+                                </TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -50,4 +67,4 @@ function ICCodes() {
     );
 }
 
-export default ICCodes
+export default ICCodes;
