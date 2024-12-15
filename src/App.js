@@ -16,7 +16,7 @@ import TORCodes from './pages/TORCodes.js'
               main: '#47C2FF',
             },
             secondary: {
-              main: '#f50057',
+              main: '#FF4284',
             },
             info: {
                 main: '#2196f3',
