@@ -219,6 +219,12 @@ const LegislationTable = () => {
       title: 'Offence of having article with blade or point in public place',
       link: 'https://www.legislation.gov.uk/ukpga/1988/33/section/139',
     },
+    {
+        act: 'Offences against the Person Act 1861',
+        section: 'Section 16',
+        title: 'Threats to kill',
+        link: 'https://www.legislation.gov.uk/ukpga/Vict/24-25/100/section/16',
+      },
   ]);
 
   const [searchQuery, setSearchQuery] = useState('');
