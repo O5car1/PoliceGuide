@@ -224,7 +224,13 @@ const LegislationTable = () => {
         section: 'Section 16',
         title: 'Threats to kill',
         link: 'https://www.legislation.gov.uk/ukpga/Vict/24-25/100/section/16',
-      },
+    },
+    {
+        act: 'The Air Navigation Order 2016',
+        section: 'Section 1',
+        title: 'Endangering safety of an aircraft',
+        link: 'https://www.legislation.gov.uk/uksi/2016/765/part/10/chapter/1',
+    },
   ]);
 
   const [searchQuery, setSearchQuery] = useState('');
