@@ -124,6 +124,30 @@ const LegislationTable = () => {
         link: 'https://www.legislation.gov.uk/ukpga/1988/52/section/170',
     },
     {
+        act: 'Road Traffic Act 1988',
+        section: 'Section 5',
+        title: 'Driving or being in charge of a motor vehicle with alcohol concentration above prescribed limit',
+        link: 'https://www.legislation.gov.uk/ukpga/1988/52/section/5',
+    },
+    {
+        act: 'Road Traffic Act 1988',
+        section: 'Section 4',
+        title: 'Driving, or being in charge, when under influence of drink or drugs (Doesnt have to be over the limit)',
+        link: 'https://www.legislation.gov.uk/ukpga/1988/52/section/4',
+    },
+    {
+        act: 'Road Traffic Act 1988',
+        section: 'Section 6',
+        title: 'Power to administer preliminary tests (breathalyser)',
+        link: 'https://www.legislation.gov.uk/ukpga/1988/52/section/6',
+    },
+    {
+        act: 'Road Traffic Act 1988',
+        section: 'Section 6C',
+        title: 'Preliminary drug test (Drug Swab)',
+        link: 'https://www.legislation.gov.uk/ukpga/1988/52/section/6C',
+    },
+    {
         act: 'Firearms Act 1968',
         section: 'Section 1',
         title: 'Requirement of firearm certificate',
