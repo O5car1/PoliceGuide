@@ -46,10 +46,16 @@ const LegislationTable = () => {
       link: 'https://www.legislation.gov.uk/ukpga/1984/60/section/32',
     },
     {
-      act: 'Misuse of Drugs Act 1971',
-      section: 'Section 4',
-      title: 'Restriction of production and supply of controlled drugs',
-      link: 'https://www.legislation.gov.uk/ukpga/1971/38/section/4',
+        act: 'Misuse of Drugs Act 1971',
+        section: 'Section 4',
+        title: 'Restriction of production and supply of controlled drugs',
+        link: 'https://www.legislation.gov.uk/ukpga/1971/38/section/4',
+    },
+    {
+      act: 'Mental Health Act 1983',
+      section: 'Section 136',
+      title: 'Removal etc of mentally disordered persons without a warrant',
+      link: 'https://www.legislation.gov.uk/ukpga/1983/20/section/136',
     },
     {
       act: 'Misuse of Drugs Act 1971',
@@ -226,10 +232,68 @@ const LegislationTable = () => {
         link: 'https://www.legislation.gov.uk/ukpga/Vict/24-25/100/section/16',
     },
     {
+        act: 'Offences against the Person Act 1861',
+        section: 'Section 20',
+        title: 'Inflicting bodily injury, with or without weapon (GBH)',
+        link: 'https://www.legislation.gov.uk/ukpga/Vict/24-25/100/section/20',
+    },
+    {
         act: 'The Air Navigation Order 2016',
         section: 'Section 1',
         title: 'Endangering safety of an aircraft',
         link: 'https://www.legislation.gov.uk/uksi/2016/765/part/10/chapter/1',
+    },
+    {
+        act: 'Anti-social Behaviour, Crime and Policing Act 2014',
+        section: 'Section 34',
+        title: 'Authorisations to use powers under section 35',
+        link: 'https://www.legislation.gov.uk/ukpga/2014/12/part/3',
+    },
+    {
+        act: 'Anti-social Behaviour, Crime and Policing Act 2014',
+        section: 'Section 35',
+        title: 'Directions excluding a person from an area',
+        link: 'https://www.legislation.gov.uk/ukpga/2014/12/part/3',
+    },
+    {
+        act: 'Criminal Justice and Public Order Act 1994',
+        section: 'Section 60',
+        title: 'Powers to stop and search in anticipation of, or after, violence',
+        link: 'https://www.legislation.gov.uk/ukpga/1994/33/section/60',
+    },
+    {
+        act: 'Criminal Justice and Public Order Act 1994',
+        section: 'Section 60AA',
+        title: 'Powers to require removal of disguises (face coverings)',
+        link: 'https://www.legislation.gov.uk/ukpga/1994/33/section/60AA',
+    },
+    {
+        act: 'Criminal Justice and Public Order Act 1994',
+        section: 'Section 68',
+        title: 'Offence of aggravated trespass',
+        link: 'https://www.legislation.gov.uk/ukpga/1994/33/section/68',
+    },
+    {
+        act: 'Criminal Damage Act 1971',
+        section: 'Section 1',
+        title: 'Destroying or damaging property and Arson',
+        link: 'https://www.legislation.gov.uk/ukpga/1971/48/section/1',
+    },
+    {
+        act: 'Assaults on Emergency Workers (Offences) Act 2018',
+        section: 'Section 1',
+        title: 'Common assault and battery (Emergency worker)',
+        link: 'https://www.legislation.gov.uk/ukpga/2018/23',
+    },
+    {
+        act: 'Public Order Act 1986',
+        section: 'Section 3',
+        title: 'Affray',
+        link: 'https://www.legislation.gov.uk/ukpga/1986/64/section/3',
+    },
+    {
+        act: 'Common Law',
+        title: 'Common Assault',
     },
   ]);
 
@@ -239,7 +303,7 @@ const LegislationTable = () => {
     (row) =>
       row.act.toLowerCase().includes(searchQuery.toLowerCase()) ||
       row.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      row.section.toLowerCase().includes(searchQuery.toLowerCase())
+      (row.section && row.section.toLowerCase().includes(searchQuery.toLowerCase()))
   );
 
   return (
@@ -263,17 +327,17 @@ const LegislationTable = () => {
             <TableRow>
               <TableCell>
                 <Typography color="primary" variant="h6">
+                  Title
+                </Typography>
+              </TableCell>
+              <TableCell>
+                <Typography color="primary" variant="h6">
                   Section
                 </Typography>
               </TableCell>
               <TableCell>
                 <Typography color="primary" variant="h6">
                   Act
-                </Typography>
-              </TableCell>
-              <TableCell>
-                <Typography color="primary" variant="h6">
-                  Title
                 </Typography>
               </TableCell>
               <TableCell>
@@ -286,17 +350,21 @@ const LegislationTable = () => {
           <TableBody>
             {filteredRows.map((row, index) => (
               <TableRow key={index}>
-                <TableCell>{row.section}</TableCell>
-                <TableCell>{row.act}</TableCell>
                 <TableCell>{row.title}</TableCell>
+                <TableCell>{row.section || '-'}</TableCell>
+                <TableCell>{row.act}</TableCell>
                 <TableCell>
-                  <Button
-                    color="secondary"
-                    variant="outlined"
-                    onClick={() => window.open(row.link, '_blank', 'noopener,noreferrer')}
-                  >
-                    Open Link
-                  </Button>
+                  {row.link && ( // Only render the button if row.link exists
+                    <Button
+                      color="secondary"
+                      variant="outlined"
+                      onClick={() =>
+                        window.open(row.link, '_blank', 'noopener,noreferrer')
+                      }
+                    >
+                      Open Link
+                    </Button>
+                  )}
                 </TableCell>
               </TableRow>
             ))}
