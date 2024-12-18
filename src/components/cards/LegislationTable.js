@@ -295,6 +295,12 @@ const LegislationTable = () => {
         act: 'Common Law',
         title: 'Common Assault',
     },
+    {
+        act: 'Offensive Weapons Act 2019',
+        section: 'Section 52',
+        title: 'Offence of threatening with an offensive weapon etc in a private place',
+        link: 'https://www.legislation.gov.uk/ukpga/2019/17/section/52',
+    },
   ]);
 
   const [searchQuery, setSearchQuery] = useState('');
