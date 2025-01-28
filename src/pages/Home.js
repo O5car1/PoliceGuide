@@ -1,6 +1,5 @@
 import React from "react";
-import { Typography } from "@mui/material";
-import Grid2 from "@mui/material/Unstable_Grid2";
+import { Typography, Grid2 } from "@mui/material";
 import Necessities from "../components/cards/Necessities";
 import ICCodes from "../components/cards/IC-Codes";
 import IPP from "../components/cards/Initial-Phase-Pursuit";
