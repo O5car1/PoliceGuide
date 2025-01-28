@@ -10,25 +10,20 @@ import Notes from "../components/cards/Notes";
 const Home = () => {
   return (
     <Grid2 container spacing={2} padding={1.5}>
-      {/* LEFT HALF: Title + Existing Content */}
-      <Grid2 item xs={12} md={6}>
-        {/* Title Section */}
+      {/* LEFT HALF */}
+      <Grid2 item xs={6}>
         <Typography color="primary" variant="h4" sx={{ mb: 2 }}>
           Crib Sheet
         </Typography>
 
-        {/* Main Content Section: 4 columns in one row */}
+        {/* Your existing 4-column layout inside this half */}
         <Grid2 container spacing={1}>
           {/* First Column */}
           <Grid2
             item
             xs={12}
-            md={3}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 1,
-            }}
+            md={3} // or just xs={12} for smaller columns
+            sx={{ display: "flex", flexDirection: "column", gap: 1 }}
           >
             <ICCodes />
             <DrugClasses />
@@ -39,11 +34,7 @@ const Home = () => {
             item
             xs={12}
             md={3}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 1,
-            }}
+            sx={{ display: "flex", flexDirection: "column", gap: 1 }}
           >
             <Necessities />
             <IPP />
@@ -54,11 +45,7 @@ const Home = () => {
             item
             xs={12}
             md={3}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 1,
-            }}
+            sx={{ display: "flex", flexDirection: "column", gap: 1 }}
           >
             <GOWISELY />
           </Grid2>
@@ -68,31 +55,26 @@ const Home = () => {
             item
             xs={12}
             md={3}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 2,
-            }}
+            sx={{ display: "flex", flexDirection: "column", gap: 2 }}
           >
             <Notes />
           </Grid2>
         </Grid2>
       </Grid2>
 
-      {/* RIGHT HALF: Iframe */}
+      {/* RIGHT HALF - Iframe */}
       <Grid2
         item
-        xs={12}
-        md={6}
+        xs={6}
         sx={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center", // optional, to center horizontally
-          justifyContent: "flex-start", // or "center" as desired
+          alignItems: "center", // optional
+          justifyContent: "flex-start", // optional
         }}
       >
         <iframe
-          title="Another Site"
+          title="External Site"
           src="https://example.com"
           style={{
             width: "100%",
