@@ -1,5 +1,4 @@
-import { Grid2, Box, Typography, Button } from '@mui/material';
-import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
+import { Grid as Grid2, Box, Typography, Button } from '@mui/material';
 import { useState } from 'react';
 
 const Documents = () => {
@@ -20,26 +19,31 @@ const Documents = () => {
       url: 'https://drive.google.com/file/d/12Qsilo9E0sPRbYXFt1tz4b3CoIbxrIFP/view?usp=sharing',
     },
     {
-        label: 'IFC Full Training',
-        url: 'https://drive.google.com/file/d/1qnyFe2cKYQFGrMgz5Hc7rfPkD8MhPJdO/view?usp=sharing',
+      label: 'IFC Full Training',
+      url: 'https://drive.google.com/file/d/1qnyFe2cKYQFGrMgz5Hc7rfPkD8MhPJdO/view?usp=sharing',
     },
     {
-        label: 'TPAC Training',
-        url: 'https://drive.google.com/file/d/1gYgALSBDufMc6DgxpbNQ7rh09gTBFmTb/view?usp=sharing',
+      label: 'TPAC Training',
+      url: 'https://drive.google.com/file/d/1gYgALSBDufMc6DgxpbNQ7rh09gTBFmTb/view?usp=sharing',
     },
     {
-        label: 'Stinger Training',
-        url: 'https://drive.google.com/file/d/1kwAsoDqrzrDQbzI6kmZSN05GF0tm4e5D/view?usp=sharing',
+      label: 'Stinger Training',
+      url: 'https://drive.google.com/file/d/1kwAsoDqrzrDQbzI6kmZSN05GF0tm4e5D/view?usp=sharing',
     },
     {
-        label: 'TSG POL1 Training',
-        url: 'https://drive.google.com/file/d/13NsV8a4pUerjIqKUEhTixeueZwpnxgHY/view?usp=sharing',
+      label: 'TSG POL1 Training',
+      url: 'https://drive.google.com/file/d/13NsV8a4pUerjIqKUEhTixeueZwpnxgHY/view?usp=sharing',
     },
     {
-        label: 'TOR Code Quick',
-        url: 'https://drive.google.com/file/d/1UZZfKXubNcPLvw-CxJ_hPYARKdH9YiiP/view?usp=sharing',
+      label: 'TOR Code Quick',
+      url: 'https://drive.google.com/file/d/1UZZfKXubNcPLvw-CxJ_hPYARKdH9YiiP/view?usp=sharing',
     },
   ];
+
+  // Simple helper to convert Google Drive "view?..." links into "preview" links
+  const getPreviewLink = (driveLink) => {
+    return driveLink.replace('/view?usp=sharing', '/preview');
+  };
 
   return (
     <Box padding={1.5}>
@@ -47,7 +51,7 @@ const Documents = () => {
         <Typography color='primary' variant='h4' sx={{ paddingBottom: '12px' }}>
           Documents
         </Typography>
-        <Grid2 sx={{ justifyContent: 'center'}} container spacing={1.5}>
+        <Grid2 sx={{ justifyContent: 'center' }} container spacing={1.5}>
           {documents.map((doc, index) => (
             <Grid2 key={index}>
               <Button
@@ -62,12 +66,13 @@ const Documents = () => {
           ))}
         </Grid2>
       </Box>
+
       <Box sx={{ width: '100%', height: '77.5vh' }}>
         {PDFUrl ? (
           <iframe
             width='100%'
             height='100%'
-            src={PDFUrl}
+            src={getPreviewLink(PDFUrl)}
             title='Document Viewer'
             style={{ border: 'none' }}
           />
@@ -75,10 +80,7 @@ const Documents = () => {
           <Typography
             variant='h6'
             align='center'
-            sx={{
-              paddingTop: '20px',
-              color: 'secondary',
-            }}
+            sx={{ paddingTop: '20px', color: 'secondary.main' }}
           >
             No document selected. Please select a document.
           </Typography>

@@ -29,104 +29,69 @@ function GOWISELY() {
                                 </Typography>
                             </ListItem>
                         </Tooltip>
-                        <ListItem>
-                            <Typography>
-                                <Typography sx={{ fontWeight: 'bold' }} component="span">
-                                    Object{' '}
+                        <Tooltip arrow followCursor title="What are you searching for">
+                            <ListItem>
+                                <Typography>
+                                    <Typography sx={{ fontWeight: 'bold' }} component="span">
+                                        Object{' '}
+                                    </Typography>
                                 </Typography>
-                                <Typography
-                                    color="primary"
-                                    sx={{ fontStyle: 'italic', fontSize: 'default' }}
-                                    component="span"
-                                >
-                                    What you are searching for
+                            </ListItem>
+                        </Tooltip>
+                        <Tooltip arrow followCursor title="Only if wearing plain clothes">
+                            <ListItem>
+                                <Typography>
+                                    <Typography sx={{ fontWeight: 'bold' }} component="span">
+                                        Warrant Card{' '}
+                                    </Typography>
                                 </Typography>
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography>
-                                <Typography sx={{ fontWeight: 'bold' }} component="span">
-                                    Warrant Card{' '}
+                            </ListItem>
+                        </Tooltip>
+                        <Tooltip arrow followCursor title="Your callsign/collar number">
+                            <ListItem>
+                                <Typography>
+                                    <Typography sx={{ fontWeight: 'bold' }} component="span">
+                                        Identify{' '}
+                                    </Typography>
                                 </Typography>
-                                <Typography
-                                    color="primary"
-                                    sx={{ fontStyle: 'italic', fontSize: 'default' }}
-                                    component="span"
-                                >
-                                    Only if not in uniform
+                            </ListItem>
+                        </Tooltip>
+                        <Tooltip arrow followCursor title="Attached to Lillie Road Firearms Base or Alpteron Operations Base">
+                            <ListItem>
+                                <Typography>
+                                    <Typography sx={{ fontWeight: 'bold' }} component="span">
+                                        Station{' '}
+                                    </Typography>
                                 </Typography>
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography>
-                                <Typography sx={{ fontWeight: 'bold' }} component="span">
-                                    Identify{' '}
+                            </ListItem>
+                        </Tooltip>
+                        <Tooltip arrow followCursor title="Entitled to a copy of the search up to 3 months from todays date">
+                            <ListItem>
+                                <Typography>
+                                    <Typography sx={{ fontWeight: 'bold' }} component="span">
+                                        Entitlement{' '}
+                                    </Typography>
                                 </Typography>
-                                <Typography
-                                    color="primary"
-                                    sx={{ fontStyle: 'italic', fontSize: 'default' }}
-                                    component="span"
-                                >
-                                    INSP/SGT/PC 145/168BX/OC-XX
+                            </ListItem>
+                        </Tooltip>
+                        <Tooltip arrow followCursor title="S.23 Misuse of Drugs/S.1 PACE/S.47 Firearms Act">
+                            <ListItem>
+                                <Typography>
+                                    <Typography sx={{ fontWeight: 'bold' }} component="span">
+                                        Legal Power{' '}
+                                    </Typography>
                                 </Typography>
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography>
-                                <Typography sx={{ fontWeight: 'bold' }} component="span">
-                                    Station{' '}
+                            </ListItem>
+                        </Tooltip>
+                        <Tooltip arrow followCursor title="Tell them they are being detained for the purpose of the search and are not free to leave">
+                            <ListItem>
+                                <Typography>
+                                    <Typography sx={{ fontWeight: 'bold' }} component="span">
+                                        You are being detained{' '}
+                                    </Typography>
                                 </Typography>
-                                <Typography
-                                    color="primary"
-                                    sx={{ fontStyle: 'italic', fontSize: 'default' }}
-                                    component="span"
-                                >
-                                    Attached to Lillie Road Firearms Base
-                                </Typography>
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography>
-                                <Typography sx={{ fontWeight: 'bold' }} component="span">
-                                    Entitlement{' '}
-                                </Typography>
-                                <Typography
-                                    color="primary"
-                                    sx={{ fontStyle: 'italic', fontSize: 'default' }}
-                                    component="span"
-                                >
-                                    To a copy of the search, up to 3 months from today
-                                </Typography>
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography>
-                                <Typography sx={{ fontWeight: 'bold' }} component="span">
-                                    Legal Power{' '}
-                                </Typography>
-                                <Typography
-                                    color="primary"
-                                    sx={{ fontStyle: 'italic', fontSize: 'default' }}
-                                    component="span"
-                                >
-                                    S.23 Misuse of Drugs/S.1 PACE/S.47 Firearms Act
-                                </Typography>
-                            </Typography>
-                        </ListItem>
-                        <ListItem>
-                            <Typography>
-                                <Typography sx={{ fontWeight: 'bold' }} component="span">
-                                    You{' '}
-                                </Typography>
-                                <Typography
-                                    color="primary"
-                                    sx={{ fontStyle: 'italic', fontSize: 'default' }}
-                                    component="span"
-                                >
-                                    Are being detained
-                                </Typography>
-                            </Typography>
-                        </ListItem>
+                            </ListItem>
+                        </Tooltip>
                     </List>
                 </Grid2>
             </CardContent>
