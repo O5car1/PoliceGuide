@@ -9,35 +9,35 @@ const Documents = () => {
   const documents = [
     {
       label: 'D13 Medical',
-      url: 'https://github.com/O5car1/PoliceGuide/blob/main/src/Documents/ARVOTraining.pdf',
+      url: 'https://drive.google.com/file/d/1cQNlUEoYyJExEcUqkrSmXPK-JtMz5uIv/view?usp=sharing',
     },
     {
       label: 'IFC Quick Sheet',
-      url: 'https://oscar-dixon.github.io/PoliceGuide/content/IFCQuickSheet.pdf',
+      url: 'https://drive.google.com/file/d/1rDqRpkZTLCQAN1MD9Z0y2bRScao7ZdKn/view?usp=sharing',
     },
     {
       label: 'MO8 Introduction',
-      url: 'https://oscar-dixon.github.io/PoliceGuide/content/MO8Introduction.pdf',
+      url: 'https://drive.google.com/file/d/12Qsilo9E0sPRbYXFt1tz4b3CoIbxrIFP/view?usp=sharing',
     },
     {
         label: 'IFC Full Training',
-        url: 'https://oscar-dixon.github.io/PoliceGuide/content/IFCTraining.pdf',
+        url: 'https://drive.google.com/file/d/1qnyFe2cKYQFGrMgz5Hc7rfPkD8MhPJdO/view?usp=sharing',
     },
     {
         label: 'TPAC Training',
-        url: 'https://oscar-dixon.github.io/PoliceGuide/content/TPACTraining.pdf',
+        url: 'https://drive.google.com/file/d/1gYgALSBDufMc6DgxpbNQ7rh09gTBFmTb/view?usp=sharing',
     },
     {
         label: 'Stinger Training',
-        url: 'https://oscar-dixon.github.io/PoliceGuide/content/StingerTraining.pdf',
+        url: 'https://drive.google.com/file/d/1kwAsoDqrzrDQbzI6kmZSN05GF0tm4e5D/view?usp=sharing',
     },
     {
         label: 'TSG POL1 Training',
-        url: 'https://oscar-dixon.github.io/PoliceGuide/content/MO7POL1Training.pdf',
+        url: 'https://drive.google.com/file/d/13NsV8a4pUerjIqKUEhTixeueZwpnxgHY/view?usp=sharing',
     },
     {
         label: 'TOR Code Quick',
-        url: 'https://oscar-dixon.github.io/PoliceGuide/content/TORCodeQuickReference.pdf',
+        url: 'https://drive.google.com/file/d/1UZZfKXubNcPLvw-CxJ_hPYARKdH9YiiP/view?usp=sharing',
     },
   ];
 
