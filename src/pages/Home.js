@@ -75,7 +75,7 @@ const Home = () => {
       >
         <iframe
           title="External Site"
-          src="https://example.com"
+          src="https://o5car1.github.io/PoliceGuide/documents"
           style={{
             width: "100%",
             height: "80vh",
