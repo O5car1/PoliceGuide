@@ -23,7 +23,7 @@ const Home = () => {
           <Grid
             item
             xs={12}
-            md={3}
+            md={4}
             sx={{ display: "flex", flexDirection: "column", gap: 1 }}
           >
             <ICCodes />
@@ -34,7 +34,7 @@ const Home = () => {
           <Grid
             item
             xs={12}
-            md={3}
+            md={4}
             sx={{ display: "flex", flexDirection: "column", gap: 1 }}
           >
             <Necessities />
@@ -45,7 +45,7 @@ const Home = () => {
           <Grid
             item
             xs={12}
-            md={3}
+            md={4}
             sx={{ display: "flex", flexDirection: "column", gap: 1 }}
           >
             <GOWISELY />
@@ -54,7 +54,7 @@ const Home = () => {
         </Grid>
       </Grid>
 
-      {/* RIGHT COLUMN: Iframe to another site */}
+      {/* RIGHT COLUMN: Documents */}
       <Grid
         item
         xs={12}
