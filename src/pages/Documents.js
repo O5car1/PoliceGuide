@@ -9,7 +9,7 @@ const Documents = () => {
   const documents = [
     {
       label: 'D13 Medical',
-      url: 'https://oscar-dixon.github.io/PoliceGuide/Documents/D13Training.pdf',
+      url: 'https://github.com/O5car1/PoliceGuide/blob/main/src/Documents/ARVOTraining.pdf',
     },
     {
       label: 'IFC Quick Sheet',
