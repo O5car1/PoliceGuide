@@ -49,15 +49,6 @@ const Home = () => {
             sx={{ display: "flex", flexDirection: "column", gap: 1 }}
           >
             <GOWISELY />
-          </Grid>
-
-          {/* Fourth Column */}
-          <Grid
-            item
-            xs={12}
-            md={3}
-            sx={{ display: "flex", flexDirection: "column", gap: 2 }}
-          >
             <Notes />
           </Grid>
         </Grid>
