@@ -6,6 +6,7 @@ import IPP from "../components/cards/Initial-Phase-Pursuit";
 import DrugClasses from "../components/cards/Drugs-Classes";
 import GOWISELY from "../components/cards/GOWISELY";
 import Notes from "../components/cards/Notes";
+import Documents from "../pages/Documents";
 
 const Home = () => {
   return (
@@ -73,15 +74,7 @@ const Home = () => {
           alignItems: "center", // optional
         }}
       >
-        <iframe
-          title="External Site"
-          src="https://o5car1.github.io/PoliceGuide/documents"
-          style={{
-            width: "100%",
-            height: "80vh",
-            border: "1px solid #ccc",
-          }}
-        />
+        <Documents />
       </Grid>
     </Grid>
   );
