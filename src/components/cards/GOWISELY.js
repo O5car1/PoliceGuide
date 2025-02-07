@@ -20,20 +20,15 @@ function GOWISELY() {
                 </Typography>
                 <Grid2>
                     <List dense>
-                        <ListItem>
-                            <Typography>
-                                <Typography sx={{ fontWeight: 'bold' }} component="span">
-                                    Grounds{' '}
+                        <Tooltip arrow followCursor title="Why are you searching">
+                            <ListItem>
+                                <Typography>
+                                    <Typography sx={{ fontWeight: 'bold' }} component="span">
+                                        Grounds{' '}
+                                    </Typography>
                                 </Typography>
-                                <Typography
-                                    color="primary"
-                                    sx={{ fontStyle: 'italic', fontSize: 'default' }}
-                                    component="span"
-                                >
-                                    Why are you searching
-                                </Typography>
-                            </Typography>
-                        </ListItem>
+                            </ListItem>
+                        </Tooltip>
                         <ListItem>
                             <Typography>
                                 <Typography sx={{ fontWeight: 'bold' }} component="span">
