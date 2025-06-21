@@ -7,7 +7,6 @@ const Toolkit = () => {
     return (
         <Box padding={1.5}>
             <Typography color='primary' variant="h4" sx={{ paddingBottom: '12px' }}>Toolkit</Typography>
-            <FMSGenerator />
             <DisableZELSPanel />
         </Box>
     );
