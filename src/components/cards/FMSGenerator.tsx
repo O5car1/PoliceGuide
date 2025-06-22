@@ -81,7 +81,7 @@ function FMSGenerator() {
 
     return <Card variant="outlined" sx={{ mb: 2 }}>
         <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography color='secondary' gutterBottom variant='h5' component="div">
                 FMS Generator
             </Typography>
 
@@ -117,7 +117,7 @@ function FMSGenerator() {
                 />
             </>}
 
-            <ButtonGroup variant="contained">
+            <ButtonGroup color='info' variant='outlined'>
                 {!retrievalTime && <Button onClick={() => retrieveAction()}>Retrieve</Button>}
 
                 {retrievalTime && <Button onClick={() => handInAction()}>Hand In</Button>}
@@ -125,7 +125,7 @@ function FMSGenerator() {
                 {retrievalTime && <Button color='error' onClick={() => resetAction()}>Reset</Button>}
             </ButtonGroup>
 
-            <Button sx={{ float: 'right' }} onClick={() => setShowSettings(!showSettings)}>{showSettings ? 'Close' : 'Open'} Settings</Button>
+            <Button color='info' sx={{ float: 'right' }} onClick={() => setShowSettings(!showSettings)}>{showSettings ? 'Close' : 'Open'} Settings</Button>
 
             {fms && <TextField
                 label="FMS"
