@@ -323,7 +323,7 @@ function DeploymentLog() {
 
     return <Card variant="outlined" sx={{ mb: 2 }}>
         <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography color='secondary' gutterBottom variant='h5' component="div">
                 Deployment Log
             </Typography>
 
@@ -352,7 +352,7 @@ function DeploymentLog() {
                             onChange={(event: React.ChangeEvent<HTMLInputElement>) => setFmsDataRaw(event.target.value)}
                         />
 
-                        <Button sx={{ float: 'right' }} onClick={() => processAndSave()}>Process and save data</Button>
+                        <Button color='info' sx={{ float: 'right' }} onClick={() => processAndSave()}>Process and save data</Button>
                     </Grid>
                     <Grid item xs={6}>
                         <TextField
