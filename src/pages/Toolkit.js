@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import DisableZELSPanel from '../components/cards/DisableZELSPanel';
-import FMSGenerator from '../components/cards/FMSGenerator';
+import FMSGenerator from '../components/cards/FMSGenerator.tsx';
 
 const Toolkit = () => {
     return (
