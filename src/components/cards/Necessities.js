@@ -4,12 +4,7 @@ function Necessities() {
     return (
         <Card
             variant="outlined"
-            sx={{
-                maxWidth: { xs: '100%', sm: '300px', md: '350px' }, // Reduced max width for narrower card
-                width: '100%', // Full width of parent up to maxWidth
-                padding: { xs: 1, sm: 1 }, // Adjust padding for responsiveness
-                boxShadow: 2, // Optional: Adds shadow for better visual appearance
-            }}
+            sx={{ width: '100%', height: '100%' }}
         >
             <CardContent>
                 <Grid2>

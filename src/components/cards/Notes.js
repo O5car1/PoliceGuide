@@ -2,11 +2,7 @@ import { Card, CardContent, Typography, Chip, Grid2, Tooltip, TextField } from '
 
 function Notes() {
     return (
-        <Card variant='outlined'  sx={{ 
-            width: '100%', 
-            display: 'flex', 
-            flexDirection: 'column',
-          }}>
+        <Card variant='outlined' sx={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}>
             <CardContent>
                 <Grid2>
                     <Typography color='secondary' variant='h5' sx={{pb: 2}}>Notes</Typography>

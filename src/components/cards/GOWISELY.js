@@ -4,12 +4,7 @@ function GOWISELY() {
     return (
         <Card
             variant="outlined"
-            sx={{
-                maxWidth: { xs: '100%', sm: '450px', md: '500px' }, // Responsive max width
-                width: '100%', // Full width of parent up to maxWidth
-                padding: { xs: 1, sm: 1 }, // Responsive padding
-                boxShadow: 2, // Subtle shadow for better appearance
-            }}
+            sx={{ width: '100%', height: '100%' }}
         >
             <CardContent>
                 <Typography

@@ -5,12 +5,7 @@ function IPP() {
     return (
         <Card
             variant="outlined"
-            sx={{
-                maxWidth: { xs: '100%', sm: '400px', md: '500px' }, // Responsive max width
-                width: '100%', // Full width of parent up to maxWidth
-                padding: { xs: 1, sm: 1 }, // Adjust padding for responsiveness
-                boxShadow: 2, // Optional: Add shadow for better visual appearance
-            }}
+            sx={{ width: '100%', height: '100%' }}
         >
             <CardContent>
                 <Typography
