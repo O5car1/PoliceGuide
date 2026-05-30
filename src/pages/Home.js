@@ -1,12 +1,12 @@
 import React from "react";
-import { Typography, Grid, Divider, Box } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 import Necessities from "../components/cards/Necessities";
 import ICCodes from "../components/cards/IC-Codes";
 import IPP from "../components/cards/Initial-Phase-Pursuit";
 import DrugClasses from "../components/cards/Drugs-Classes";
 import GOWISELY from "../components/cards/GOWISELY";
 import Notes from "../components/cards/Notes";
-import Documents from "../pages/Documents";
+import EmbeddedSites from "../components/EmbeddedSites";
 
 const Home = () => {
   return (
@@ -50,7 +50,7 @@ const Home = () => {
         </Grid>
       </Grid>
 
-      {/* RIGHT COLUMN: Documents */}
+      {/* RIGHT COLUMN: Embedded Sites */}
       <Grid
         item
         xs={12}
@@ -58,9 +58,11 @@ const Home = () => {
         sx={{
           p: { xs: 2, sm: 3 },
           borderTop: { xs: '1px solid rgba(255,255,255,0.08)', lg: 'none' },
+          display: 'flex',
+          flexDirection: 'column',
         }}
       >
-        <Documents />
+        <EmbeddedSites />
       </Grid>
     </Grid>
   );
