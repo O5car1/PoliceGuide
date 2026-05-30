@@ -3,7 +3,7 @@ import { Box, Typography, Button, Stack } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const sites = [
-  { label: 'Streamable', url: 'https://streamable.com/' },
+  { label: 'PostImages', url: 'https://postimages.org/' },
 ];
 
 function EmbeddedSites() {
