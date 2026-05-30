@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Box, Typography, Button, Stack } from '@mui/material';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import MG3Builder from './MG3_Builder';
 
 const sites = [
+  { label: 'MG3 Builder', component: <MG3Builder /> },
   { label: 'PostImages', url: 'https://postimages.org/' },
 ];
 
@@ -44,41 +46,47 @@ function EmbeddedSites() {
           flexGrow: 1,
           minHeight: { xs: '60vh', lg: 0 },
           borderRadius: 2,
-          overflow: 'hidden',
+          overflow: 'auto',
           border: '1px solid rgba(255,255,255,0.08)',
-          backgroundColor: 'background.paper',
+          backgroundColor: active.component ? 'background.default' : 'background.paper',
         }}
       >
-        <iframe
-          key={active.url}
-          src={active.url}
-          title={active.label}
-          width="100%"
-          height="100%"
-          style={{ border: 'none', display: 'block', minHeight: '500px' }}
-          sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
-        />
-        <Button
-          size="small"
-          href={active.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          startIcon={<OpenInNewIcon fontSize="small" />}
-          sx={{
-            position: 'absolute',
-            top: 8,
-            right: 8,
-            backgroundColor: 'rgba(22,22,22,0.85)',
-            backdropFilter: 'blur(4px)',
-            border: '1px solid rgba(255,255,255,0.12)',
-            color: 'text.secondary',
-            textTransform: 'none',
-            fontSize: '0.75rem',
-            '&:hover': { backgroundColor: 'rgba(40,40,40,0.9)', color: 'text.primary' },
-          }}
-        >
-          Open in tab
-        </Button>
+        {active.component ? (
+          active.component
+        ) : (
+          <>
+            <iframe
+              key={active.url}
+              src={active.url}
+              title={active.label}
+              width="100%"
+              height="100%"
+              style={{ border: 'none', display: 'block', minHeight: '500px' }}
+              sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+            />
+            <Button
+              size="small"
+              href={active.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              startIcon={<OpenInNewIcon fontSize="small" />}
+              sx={{
+                position: 'absolute',
+                top: 8,
+                right: 8,
+                backgroundColor: 'rgba(22,22,22,0.85)',
+                backdropFilter: 'blur(4px)',
+                border: '1px solid rgba(255,255,255,0.12)',
+                color: 'text.secondary',
+                textTransform: 'none',
+                fontSize: '0.75rem',
+                '&:hover': { backgroundColor: 'rgba(40,40,40,0.9)', color: 'text.primary' },
+              }}
+            >
+              Open in tab
+            </Button>
+          </>
+        )}
       </Box>
     </Box>
   );
